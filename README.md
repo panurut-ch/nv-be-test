@@ -13,6 +13,23 @@ please run all command before run test because a test command will unit test onl
 
 `npm run test`
 
+
+# Code Structure
+
+nv-be-test
+
+├── index.test.ts
+├── index.ts
+├── indexthree.test.ts
+├── indexthree.ts
+├── indextwo.test.ts
+├── indextwo.ts
+├── jest.config.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.json
+
 # Formula
 
 ข้อ 1 : Permutations
@@ -31,6 +48,16 @@ Total Unique Permutations = 5! / 2! x 3!
 = 120 / 12 = 10
 result = 10 รูปแบบการเรียงของ "aabbb"
 
+
 ข้อ 2 : odd
 
-นับ ตัวเลขใน array แล้ว return ว่าเลขอะไรเป็นคี่ odd
+นับ ตัวเลขใน array แล้ว return ว่าเลขอะไรเป็นคี่ odd ด้วย 2 loop และ modulo
+ว่าจำนวนที่นับ num หาด้วย 2 ลงตัวหรือไม่ ถ้าไม่ แปลว่าเป็นคี่ odd
+ตอนแรกจะใช้ XOR แต่มีความซับซ้อนในแง่ของการเอา bit ของตัวเลขมา XOR กัน
+
+
+ข้อ 3 : smile
+
+รับ input เป็น array ข้อมูลเป็น string เอามา loop หาว่าตรงเงื่อนไขหน้าตา smile เท่าไหร่แล้ว
+return result ออกมา
+ตอนแรกจะใช้ regex แต่เลือกแบบที่ดูเรียบง่ายด้วย loop และ check if
