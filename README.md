@@ -2,7 +2,14 @@
 
 `npm install`
 
-`npm start`
+`npm run permute`
+
+`npm run odd`
+
+`npm run smile
+`
+
+please run all command before run test because a test command will unit test only complied code via npm run
 
 `npm run test`
 

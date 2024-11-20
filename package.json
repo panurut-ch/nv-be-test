@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
+    "permute": "npm run build && node dist/index.js",
     "odd": "npm run build && node dist/indextwo.js",
     "smile": "npm run build && node dist/indexthree.js",
     "test": "jest"
