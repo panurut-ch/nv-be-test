@@ -2,13 +2,13 @@ export function getPermutations(input: string): string[] {
   const result: string[] = [];
 
   function permute(current: string, remaining: string) {
-    console.log('remaining 1', remaining)
+    // console.log('remaining 1', remaining)
     // base case ไม่เหลือตัวอักษร
     if (remaining.length === 0) {
       // เพิ่มเข้า result เพื่อเป็นคำตอบ (เช็ค dup ด้วย)
-      console.log('result 1', result)
+      // console.log('result 1', result)
       if (!result.includes(current)) {
-        console.log('current 1', current)
+        // console.log('current 1', current)
         result.push(current);
       }
       return;
