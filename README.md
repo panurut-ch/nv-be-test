@@ -35,6 +35,7 @@ nv-be-test
 # Formula
 
 ข้อ 1 : Permutations
+bigO = O(n!⋅n) เพราะมี recursive (n!) และ loop เช็ค dup (O(n))
 
 Total Unique Permutations =  n! / nk!
 
@@ -52,6 +53,7 @@ result = 10 รูปแบบการเรียงของ "aabbb"
 
 
 ข้อ 2 : odd
+bigO = O(n^2) คร่าวๆเพราะมี 2 loop ซ้อนกัน
 
 นับ ตัวเลขใน array แล้ว return ว่าเลขอะไรเป็นคี่ odd ด้วย 2 loop และ modulo
 ว่าจำนวนที่นับ num หาด้วย 2 ลงตัวหรือไม่ ถ้าไม่ แปลว่าเป็นคี่ odd
@@ -59,6 +61,8 @@ result = 10 รูปแบบการเรียงของ "aabbb"
 
 
 ข้อ 3 : smile
+
+bigO = O(n) เพราะมี loop check if 1 loop (O(n))
 
 รับ input เป็น array ข้อมูลเป็น string เอามา loop หาว่าตรงเงื่อนไขหน้าตา smile เท่าไหร่แล้ว
 return result ออกมา
